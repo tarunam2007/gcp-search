@@ -7,12 +7,11 @@ import csv
 
 import xmltodict
 
-data_folder = '/home/zdenulo/Downloads/product_data/products/'
+data_folder = '/home/tarunam_verma/gcp-search/product_data/products/'
 
 output_filename = 'best_buy_products.csv'
 
 xml_files = os.listdir(data_folder)
-
 
 def get_products_from_file(filename, csv_writer):
     print (filename)
