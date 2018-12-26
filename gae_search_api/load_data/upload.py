@@ -5,7 +5,14 @@ import datetime
 import requests
 sys.path.insert(0, '../../')
 
-from settings import WEBAPP_URL, PRODUCTS_LOCAL_PATH
+# name of csv file with product data
+PRODUCTS_FILENAME = 'best_buy_products.csv'
+
+# absolute path of csv file with product data
+PRODUCTS_LOCAL_PATH = '/home/tarunam_verma/gcp-search/extract_data/best_buy_products.csv'
+
+# url of web application which server autocomplete
+WEBAPP_URL = 'http://tarunam-gcp-explore.appspot.com'
 
 UPLOAD_URL = WEBAPP_URL + '/upload_bulk'
 
